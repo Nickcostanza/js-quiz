@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFL Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="timer" class="card w-25 hide">
+        <p class="big-text">Quiz Timer</p>
+        <br>
+        <p id="timerDisplay"></p>
+    </div>
+
+    <main class="card w-50" id="main-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/a2/National_Football_League_logo.svg" alt="NFL logo">
+        <br>
+        <p>This is a quiz to test your knowledge of some fun NFL facts! You will have 2 minutes to answer 10 questions. Best of Luck!</p>
+        <br>
+        <button type="button" id="start-btn">Start Quiz!</button>
+    </main>
+
+    <div id="question-card" class="card w-50 hide">
+        <div id="question">Question</div>
+        <div id="answer-buttons" class="btn-grid">
+            <br>
+        </div>
+        <button type="button" id="next-btn" class="hide">Next Question!</button>
+        <button type="button" id="finish-btn" class="hide">Finish!</button>
+    </div>
+
+    <div id="score-count" class="hide">
+        <p id="scoreDisplay"> Points: 0</p>
+    </div>
+
+    
+   
+    
+    <script src="script.js"></script>
+</body>
+</html>
