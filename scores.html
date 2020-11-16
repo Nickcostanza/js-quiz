@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scores</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="welcome()">
+    <main class="card w-75">
+        <h1>High Scores</h1>
+        <div id="score-element">
+        </div>
+        <button onclick="scoreSave()">Save Score</button>
+        <button onclick="restartGame()">Play Again</button>
+     </main>
+
+
+     <script>
+         const score = localStorage.getItem('score');
+         const scoreElement = document.getElementById('score-element');
+
+         function welcome() {
+             alert(`You scored ${score} points!`);
+         }
+
+         function scoreSave() {
+             let initials = prompt('What are your Initials?');
+
+             localStorage.setItem('initials', initials)
+             appendScore();
+         }
+
+         function appendScore() {
+            const userList = document.createElement('p');
+            let initials = localStorage.getItem('initials');
+
+            localStorage.setItem('scoreEL', initials + ': ' + score);
+            const textNode = document.createTextNode(localStorage.getItem('scoreEl'));
+            node.appendChild(textNode);
+            document.getElementById('score-element').appendChild(node);
+            
+         }
+
+     </script>
+    
+</body>
+</html>
