@@ -5,7 +5,7 @@ const finishBtn = document.getElementById('finish-btn');
 const maincCardEl = document.getElementById('main-card');
 const questionCardEl = document.getElementById('question-card');
 const timerEL = document.getElementById('timer');
-const question = document.getElementById('question');
+const questionEL = document.getElementById('question');
 const answerBtn = document.getElementById('answer-buttons');
 const points = document.getElementById('score-count')
 
@@ -47,7 +47,7 @@ function resetState() {
 }
 
 function showQuestion(question) {
-    question.innerText = question.question;
+    questionEL.innerText = question.question;
     question.answers.forEach(answers => {
         const button = document.createElement('button')
         button.innerText = answers.text;

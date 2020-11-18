@@ -56,9 +56,9 @@ button, .btn {
   #timer {
     color: black;
     font-weight: bolder;
-    max-width: 250px;
-    max-height: 160px;
-    background-image: url(NFL.jpg);
+    max-width: 200px;
+    max-height: 200px;
+    background-image: url(football.webp);
     text-align: center;
     border-style: solid;
     
