@@ -183,7 +183,7 @@ var questions = [
     },
 
     {
-        question: 'Which NFL team plays at Mile High?',
+        question: 'Which NFL team plays at Mile High Stadium?',
         answers: [
             { text: 'Falcons' , correct: false },
             { text: 'Ravens', correct: false },
@@ -202,7 +202,7 @@ var questions = [
     },
 
     {
-        question: 'Which of the following players plays Wide Receiver?',
+        question: 'Which of the following players is a Wide Receiver?',
         answers: [
             { text: 'Calvin Johnson' , correct: true },
             { text: 'Deshaun Watson', correct: false },
@@ -212,7 +212,7 @@ var questions = [
     },
 
     {
-        question: 'Whos the greats NFL team?',
+        question: 'Who is the greatest NFL team?',
         answers: [
             { text: 'not the Patriots' , correct: false },
             { text: 'definitely not the cowboys', correct: false},

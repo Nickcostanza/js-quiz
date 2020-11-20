@@ -34,14 +34,18 @@
          }
 
          function appendScore() {
-            const userList = document.createElement('p');
+            const node = document.createElement('p');
             let initials = localStorage.getItem('initials');
 
             localStorage.setItem('scoreEL', initials + ': ' + score);
             const textNode = document.createTextNode(localStorage.getItem('scoreEl'));
-            userList.appendChild(textNode);
+            node.appendChild(textNode);
             document.getElementById('score-element').appendChild(node);
             
+         }
+
+         function restartGame() {
+             window.location.href = 'index.html'
          }
 
      </script>
